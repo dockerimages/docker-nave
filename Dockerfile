@@ -7,6 +7,6 @@ RUN echo currentsMillies > /created \
  && apt-get -y upgrade \
  && apt-get install -y curl wget git \
  && chmod +x nave \
- && apt-get -y clean
+ && apt-get -y clean \
  && ./nave install stable
 CMD ./nave use stable
