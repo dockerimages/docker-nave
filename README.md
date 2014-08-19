@@ -1,7 +1,7 @@
 nave 0.4.5
 ====
 
-## Usage
+## Container Usage
 
  Building:
     
@@ -17,13 +17,13 @@ nave 0.4.5
 
 Virtual Environments for Node
 
-## Installation
+## Nave Installation
 
 If you want a global `nave` command, you could install this thing with npm.
 But that's not really necessary.  You can run the `nave.sh` shell script
 from here, or symlink it wherever you want.
 
-## Usage
+## Nave Usage
 
     Usage: nave <cmd>
 
@@ -52,7 +52,7 @@ That's about it.  Enjoy.
 When you're done using a specific version of node, just exit the shell to return
 to where you were before using nave.
 
-## env vars
+## Nave env vars
 
 * `$NAVE` The current shell.  Either a version, or a name and version.
 * `$NAVENAME` The name of the current shell.  Equal to `$NAVEVERSION` in
@@ -90,7 +90,7 @@ such, strange archaic shells like sh, csh, tcsh, ksh, and the like will not
 work.
 
 
-## Configuration
+## Nave Configuration
 
 Nave will source `~/.naverc` on initialization of a new subshell, if it
 exists and is readable.
@@ -105,7 +105,7 @@ not exist and cannot be created, then it will attempt to use the location
 of the nave.sh bash script itself.  If it cannot write to this location,
 then it will exit with an error.
 
-## Credits
+## Nave Credits
 
 nave borrows concepts, inspiration, and code from Tim Caswell's "nvm" and Kris
 Kowal's "sea" programs.
@@ -116,3 +116,8 @@ manager, which nave is not.
 Nvm is also really nice, but has to be sourced rather than being run, and
 thus is a little bit wonky for some use cases.  But it doesn't involve
 subshells, which makes it better for some others.
+
+## Dockerimage Credits
+
+This Dockerimage uses concepts, inspiration, and code from:
+titanion and michaelcosby as also tutum and Direkt SPEED Europe
