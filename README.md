@@ -9,10 +9,11 @@ nave 0.4.5
     cd nave
     docker build -t dockerimages/nave:0.4.5 .
     
-Quickstart:
+ Quickstart:
+ 
     docker run -i -d dockerimages/nave:0.4.5
 
-
+## Advanced Infos from Author of Nave
 
 Virtual Environments for Node
 
