@@ -8,4 +8,4 @@ RUN echo currentsMillies > /created && \
     chmod +x nave.sh && \
     ./nave.sh install stable && \
     apt-get -y clean
-CMD ./nave.sh use stable npm
+CMD ./nave use stable npm
