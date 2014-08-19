@@ -1,7 +1,10 @@
 nave 0.4.5
 ====
 
-Simply do:
+## Usage
+
+ Building:
+    
     git clone https://github.com/dockerimages/nave
     cd nave
     docker build -t dockerimages/nave:0.4.5 .
