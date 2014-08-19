@@ -5,7 +5,7 @@ ADD nave /nave
 RUN echo currentsMillies > /created \
  && apt-get -y update \
  && apt-get install -y curl wget git \
- && chmod +x nave.sh \
+ && chmod +x nave \
  && apt-get -y clean
  && ./nave install stable
 CMD ./nave use stable
