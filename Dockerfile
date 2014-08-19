@@ -1,6 +1,5 @@
-FROM ubuntu:14.04
+FROM dockerimages/ubuntu-14.04
 MAINTAINER Frank Lemanschik @ Direkt SPEED Europe <frank@dspeed.eu>
-
 ADD nave.sh /nave.sh
 # invalidate the Cache and update the apt list 
 RUN echo currentsMillies > /created && \
