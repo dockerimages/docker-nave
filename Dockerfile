@@ -4,6 +4,7 @@ ADD nave /nave
 # invalidate the Cache and update the apt list 
 RUN echo currentsMillies > /created \
  && apt-get -y update \
+ && apt-get -y upgrade \
  && apt-get install -y curl wget git \
  && chmod +x nave \
  && apt-get -y clean
