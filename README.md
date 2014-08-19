@@ -1,9 +1,15 @@
-nave
+nave 0.4.5
 ====
 
-A Node.JS Related Docker File for Running Node Projects with nave a NODE.JS Version manager
+Simply do:
+    git clone https://github.com/dockerimages/nave
+    cd nave
+    docker build -t dockerimages/nave:0.4.5 .
+    
+Quickstart:
+    docker run -i -d dockerimages/nave:0.4.5
 
-# nave
+
 
 Virtual Environments for Node
 
