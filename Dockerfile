@@ -9,4 +9,5 @@ RUN echo currentsMillies > /created \
  && chmod +x nave \
  && apt-get -y clean \
  && ./nave install stable
-CMD ./nave use stable
+ENTRYPOINT ["/nave", "use", "stable"]
+CMD ["npm"]
