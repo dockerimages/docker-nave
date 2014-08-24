@@ -1,4 +1,4 @@
-FROM dockerimages/ubuntu-14.04
+FROM ubuntu:14.04
 MAINTAINER Frank Lemanschik @ Direkt SPEED Europe <frank@dspeed.eu>
 ADD nave /nave
 # invalidate the Cache and update the apt list 
