@@ -8,6 +8,6 @@ RUN echo currentsMillies > /created \
  && apt-get install -y curl wget git \
  && chmod +x /usr/bin/nave \
  && apt-get -y clean \
- && ./nave install stable
+ && nave install stable
 ENTRYPOINT ["nave", "use", "stable"]
 CMD ["npm"]
