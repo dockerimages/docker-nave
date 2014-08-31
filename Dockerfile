@@ -5,7 +5,7 @@ ADD nave /usr/bin/nave
 RUN echo currentsMillies > /created \
  && apt-get -y update \
  && apt-get -y upgrade \
- && apt-get install -y curl wget git \
+ && apt-get install -y curl wget git ca-certificates \
  && chmod +x /usr/bin/nave \
  && apt-get -y clean \
  && nave install stable
