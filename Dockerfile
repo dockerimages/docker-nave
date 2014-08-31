@@ -1,6 +1,6 @@
 FROM dockerimages/ubuntu-core:14.04
 MAINTAINER Frank Lemanschik @ Direkt SPEED Europe <frank@dspeed.eu>
-ADD nave /nave
+ADD nave /usr/bin
 # invalidate the Cache and update the apt list 
 RUN echo currentsMillies > /created \
  && apt-get -y update \
@@ -9,5 +9,5 @@ RUN echo currentsMillies > /created \
  && chmod +x nave \
  && apt-get -y clean \
  && ./nave install stable
-ENTRYPOINT ["/nave", "use", "stable"]
+ENTRYPOINT ["nave", "use", "stable"]
 CMD ["npm"]
