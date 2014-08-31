@@ -5,6 +5,10 @@ nave 0.4.5
 
  Building:
     
+    docker build -t dockerimages/nave git://github.com/dockerimages/nave
+    
+    or
+    
     git clone https://github.com/dockerimages/nave
     cd nave
     docker build -t dockerimages/nave:0.4.5 .
