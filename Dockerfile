@@ -1,6 +1,6 @@
 FROM dockerimages/ubuntu-core:14.04
 MAINTAINER Frank Lemanschik @ Direkt SPEED Europe <frank@dspeed.eu>
-ADD nave /usr/bin
+ADD nave /usr/bin/nave
 # invalidate the Cache and update the apt list 
 RUN echo currentsMillies > /created \
  && apt-get -y update \
