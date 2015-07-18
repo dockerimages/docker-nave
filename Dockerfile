@@ -9,7 +9,7 @@ RUN apt-get -y update \
  && apt-get -y clean
 VOLUME /app
 WORKDIR /app
-ENV HOME APP
+ENV HOME /app
 ADD nave /usr/bin/nave
 RUN chmod +x /usr/bin/nave
 ENTRYPOINT ["nave", "use", "stable"]
