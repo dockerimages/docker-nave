@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 MAINTAINER Frank Lemanschik @ DIREKTSPEED Europe <frank@dspeed.eu>
-ADD nave /usr/bin/nave
+
 # invalidate the Cache and update the apt list 
 # RUN echo currentsMillies > /created \
 RUN apt-get -y update \
@@ -11,5 +11,6 @@ RUN apt-get -y update \
 VOLUME /app
 WORKDIR /app
 ENV HOME APP
+ADD nave /usr/bin/nave
 ENTRYPOINT ["nave", "use", "stable"]
 CMD ["npm"]
