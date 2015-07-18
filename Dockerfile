@@ -11,5 +11,6 @@ RUN echo currentsMillies > /created \
  && nave install stable
 VOLUME /app
 WORKDIR /app
+ENV HOME APP
 ENTRYPOINT ["nave", "use", "stable"]
 CMD ["npm"]
