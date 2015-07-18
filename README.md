@@ -5,17 +5,18 @@ nave 0.4.5
 
  Building:
     
-    docker build -t dockerimages/nave git://github.com/dockerimages/nave
+    docker build -t dockerimages/nave git://github.com/dockerimages/docker-nave
     
     or
     
-    git clone https://github.com/dockerimages/nave
+    git clone https://github.com/dockerimages/docker-nave
     cd nave
     docker build -t dockerimages/nave:0.4.5 .
     
  Quickstart:
  
     docker run -i -d dockerimages/nave:0.4.5
+    docker run -d -v $PWD/app:/app start
 
 ## Advanced Infos from Author of Nave
 
@@ -124,4 +125,4 @@ subshells, which makes it better for some others.
 ## Dockerimage Credits
 
 This Dockerimage uses concepts, inspiration, and code from:
-titanion and michaelcosby as also tutum and Direkt SPEED Europe
+titanion and michaelcosby as also tutum and DIREKTSPEED / Europe
