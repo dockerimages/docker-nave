@@ -5,7 +5,7 @@ MAINTAINER Frank Lemanschik @ DIREKTSPEED Europe <frank@dspeed.eu>
 # RUN echo currentsMillies > /created \
 RUN apt-get -y update \
  && apt-get -y upgrade \
- && apt-get install -y curl wget git ca-certificates \
+ && apt-get install -y curl wget git ca-certificates python \
  && apt-get -y clean
 VOLUME /app
 WORKDIR /app
