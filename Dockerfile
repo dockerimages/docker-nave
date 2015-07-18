@@ -15,7 +15,7 @@ WORKDIR /app
 ENV HOME /app
 ADD nave /usr/bin/nave
 RUN chmod +x /usr/bin/nave
-ADD https://github.com/DIREKTSPEED-LTD/s6-init/raw/master/master.tgz /
+ADD https://github.com/DIREKTSPEED-LTD/s6-init/archive/master.tar.gz /
 RUN tar -zxvf /master.tgz -C / --strip-components=1
 ENTRYPOINT ["/usr/bin/s6-svscan","/etc/s6"]
 CMD []
