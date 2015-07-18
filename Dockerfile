@@ -16,5 +16,5 @@ ENV HOME /app
 ADD nave /usr/bin/nave
 RUN chmod +x /usr/bin/nave
 ADD https://github.com/DIREKTSPEED-LTD/s6-init/archive/master.tar.gz /
-ENTRYPOINT ["nave", "use", "stable"]
-CMD ["npm"]
+ENTRYPOINT ["/usr/bin/s6-svscan","/etc/s6"]
+CMD []
