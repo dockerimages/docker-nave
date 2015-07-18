@@ -9,5 +9,7 @@ RUN echo currentsMillies > /created \
  && chmod +x /usr/bin/nave \
  && apt-get -y clean \
  && nave install stable
+VOLUME /app
+WORKDIR /app
 ENTRYPOINT ["nave", "use", "stable"]
 CMD ["npm"]
